@@ -2,30 +2,21 @@ package app;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        boolean livesInStMichael = true;
-        char firstLetterOfName = 'R';
-        byte age = 17;
-        short avgNumberOfSteps = 20000;
-        int myFavNum = 60000;
-        long bigNum = 7000000;
-        float pi = 3.14f;
-        double rand = 4.54167535415875;
+        String person1 = "Rogan";
+        String person2 = "Mr. Osowski";
+        String verb1 = "eat";
+        String verb2 = "flatten";
+        String verb3 = "orbit";
+        String food = "noodles";
+        String dayOfWeek = "Monday";
+        String place1 = "library";
+        String place2 = "landfill";
+        String adjective1 = "huge";
+        String adjective2 = "dry";
 
-        System.out.println("Whats a random number?");
-        System.out.println(rand);
-        System.out.println("What are the first three digits of pi?");
-        System.out.println(pi);
-        System.out.println("Give me a big number");
-        System.out.println(bigNum);
-        System.out.println("What's my favorite number?");
-        System.out.println(myFavNum);
-        System.out.println("About how many steps do I take weekly?");
-        System.out.println(avgNumberOfSteps);
-        System.out.println("How old am I?");
-        System.out.println(age);
-        System.out.println("What's the first letter of my name?");
-        System.out.println(firstLetterOfName);
-        System.out.println("Do I live in St. Michael?");
-        System.out.println(livesInStMichael);
+        System.out.println(person1 + " " + "is a programmer who likes to" + " " + verb1 + ".");
+        System.out.println("Every" + " " + dayOfWeek + " " + "they make a" + " " + adjective1 + " " + food + " " + "for breakfast and" + " " + verb2 + " " + "at" + " " + place1 + " " + "with" + " " + person2 + ".");
+        System.out.println("Sometimes, they go to the" + " " + adjective2 + " " + place2 + " " + "with" + " " + person2 + " " + "so that they can" + " " + verb3 + " " + "together.");
+
     }
 }
