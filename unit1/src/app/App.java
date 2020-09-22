@@ -1,12 +1,14 @@
 package app;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int count = 0;
-        
-        while (count <= 5) {
-            System.out.println("Purple");
-            count = count +1;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please enter a color");
+        String color = input.nextLine();
+
+        System.out.println("Please enter a number");
         }
     }
 }
