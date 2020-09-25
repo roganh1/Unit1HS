@@ -1,21 +1,38 @@
 package app;
-import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
+        System.out.println("Let's count from 10 to 20");
+        
+        for (int i = 10; i <= 20; i = i +1){
+            System.out.println("The count is " +i);
+            System.out.println("Let's keep counting.");
+        }
 
-        System.out.println("Please enter a color.");
-        String color = input.nextLine();
+        for (int i = 10; i <= 100; i = i +1){
+            System.out.println("The count is " +i);
+            System.out.println("Let's keep counting.");
+        }
 
-        System.out.println("Please enter a number.");
-        int num = input.nextInt();
+        System.out.println("Now let's do 1,000-256,000");
 
-        int total = 0;
+        for (int i = 1000; i <= 256000; i = i +1){
+            System.out.println("The count is " +i);
+            System.out.println("Let's keep counting.");
+        }
 
-        while (total < num) {
-            System.out.println(color);
-            total = total + 1;
+        System.out.println("Now 11-12");
+
+        for (int i = 11; i <= 12; i = i +1){
+            System.out.println("The count is " +i);
+            System.out.println("Let's keep counting.");
+        }
+
+        System.out.println("Now lets try something a bit different.");
+
+        for (int i = 10; i <= 10; i = i -1){
+            System.out.println("The count is " +i);
+            System.out.println("Let's keep counting.");
         }
 
     }
