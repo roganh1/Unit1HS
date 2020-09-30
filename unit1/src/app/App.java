@@ -58,6 +58,6 @@ public class App {
             }
 
         System.out.println(score + "/5");
-        System.out.println((score/5.0)*100);
+        System.out.println((score/5.0)*100+"%");
     }
 }
