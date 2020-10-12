@@ -5,28 +5,23 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         boolean done = false;
-        byte numIncorrect = 0;
-
+        byte num = 34;
         while (done == false) {
-            System.out.println("What's the password?");
+            System.out.println("Guess a number between 0-100");
+            Scanner input = new Scanner(System.in);
+            byte uInput = input.nextByte();
 
-        Scanner input = new Scanner(System.in);
-        String passwd = input.nextLine();
-
-            if (numIncorrect < 3) {
-                if (passwd.equals("Password")) {
-                    System.out.println("Here's the secret message!");
-                    done = true;
-                } else {
-                    System.out.println("Error");
-                    System.out.println("Please try again");
-                    numIncorrect++;
-                }
+            if (uInput <= 33) {
+                System.out.println("Higher");
             }
 
-            if (numIncorrect >= 3) {
-                System.out.println("You have exceeded the maximum number of tries");
-                done = true;
+            if (uInput >= 35) {
+                System.out.println("Lower");
+            }
+
+            if (uInput == num) {
+                System.out.println("Correct!");
+                done= true;
             }
         }
     }
