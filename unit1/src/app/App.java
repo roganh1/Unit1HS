@@ -4,24 +4,15 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        boolean done = false;
-        byte num = 34;
-        while (done == false) {
-            System.out.println("Guess a number between 0-100");
-            Scanner input = new Scanner(System.in);
-            byte uInput = input.nextByte();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        byte uInput = input.nextByte();
+        System.out.println("Please enter another number");
+        byte uInput2 = input.nextByte();
 
-            if (uInput <= 33) {
-                System.out.println("Higher");
-            }
-
-            if (uInput >= 35) {
-                System.out.println("Lower");
-            }
-
-            if (uInput == num) {
-                System.out.println("Correct!");
-                done= true;
+        for (int count = uInput; count <= uInput2; count = count + 1) {
+            if (count % 2 == 0) {
+                System.out.println(count);
             }
         }
     }
